@@ -2,7 +2,8 @@
 node_modules/ 
  
 *.zip 
- 
+yarn.lock
+yarn-error.log
 abc.html 
 !src/ 
 !*.js 
