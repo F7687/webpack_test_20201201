@@ -2,4 +2,4 @@
 一、css优化
     1.'mini-css-extract-plugin'插件，将css提取到独立文件中；
     2.'postcss'，自动添加css前缀 （做兼容）;
-    3. 'optimize-css-assets-webpack-plugin'，css压缩
+    3. 'optimize-css-assets-webpack-plugin  terser-webpack-plugin'，css压缩

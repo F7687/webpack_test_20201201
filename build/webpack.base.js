@@ -58,7 +58,8 @@ module.exports = {
             jQuery:'jquery'
         }),
         new MiniCssExtractPlugin({
-            filename:'7687.css'
+            filename: "[name].css",
+            chunkFilename: "[id].css"
         })
     ],
     module: {
