@@ -2,7 +2,12 @@
 // let a=require('./a.js');//commonjs 导入
 //es6 zhuan
 import $ from 'jquery'
-import "@babel/polyfill";
+//语法转换插件
+// import "@babel/polyfill";
+// src/main.js
+//动态导入返回的是promise，防止低版本浏览器不支持 需要加上promise补丁
+// import "core-js/modules/es.promise";
+// import "core-js/modules/es.array.iterator";
 // es6 导入
 import T from './a.js';
 //引入css

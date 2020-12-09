@@ -20,6 +20,11 @@ module.exports = {
         index: './src/main.js',
         other: './src/other.js'
     },
+    optimization:{
+        splitChunks:{
+            chunks:'all'
+        }
+    },
     output: { //输出目录必须是绝对路劲
         //path.resolve解析当前相对路劲的觉得路劲
         path: path.resolve('./dist'),
@@ -53,10 +58,10 @@ module.exports = {
             chunks: ['other'] //other.html 文件引入的js
         }),
         new CleanWebpackPlugin(),
-        new webpack.ProvidePlugin({//jQuery注入到全局
-            $:'jquery',
-            jQuery:'jquery'
-        }),
+        // new webpack.ProvidePlugin({//jQuery注入到全局
+        //     $:'jquery',
+        //     jQuery:'jquery'
+        // }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
