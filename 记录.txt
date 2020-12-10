@@ -3,3 +3,4 @@
     1.'mini-css-extract-plugin'插件，将css提取到独立文件中；
     2.'postcss'，自动添加css前缀 （做兼容）;
     3. 'optimize-css-assets-webpack-plugin  terser-webpack-plugin'，css压缩
+    4.动态导入，安装@babel/plugin-syntax-dynamic-import，.babelrc配置文件添加该插件
