@@ -5,4 +5,11 @@
     -moz-transform: rotate(20);
     -ms-transform: rotate(20);
     -o-transform: rotate(20);
+    color: #fff;
+}
+.cst{
+    background-color: chocolate;
+    color: cyan;
+    width: 100px;
+    height: 100px;
 }

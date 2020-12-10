@@ -1,13 +1,15 @@
 {
     "presets": [
         ["@babel/preset-env", {
-          "useBuiltIns": "usage", // or "entry"
-          "corejs":{ "version": 3, "proposals": true }
-        }]
+          
+          // "useBuiltIns": "usage", // or "entry"
+          // "corejs":{ "version": 3, "proposals": true }
+        }
+      ]
       ],
     "plugins": [
         "@babel/plugin-proposal-class-properties",
-        "@babel/plugin-transform-runtime",
+        "@babel/plugin-transform-runtime",//
         "@babel/plugin-syntax-dynamic-import"
     ]
         

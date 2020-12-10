@@ -1,11 +1,10 @@
 const path = require('path');
-const webpack =require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //html插件
 const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin'); //打包时候清除dist文件夹
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const fs = require('fs');
+// const fs = require('fs');
 // async function print(path) {
 //     const dir = await fs.promises.opendir(path);
 //     for await (const dirent of dir) {
@@ -20,6 +19,7 @@ module.exports = {
         index: './src/main.js',
         other: './src/other.js'
     },
+    //代码分离
     optimization:{
         splitChunks:{
             chunks:'all'
@@ -63,8 +63,7 @@ module.exports = {
         //     jQuery:'jquery'
         // }),
         new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
+            filename: "[name].css"
         })
     ],
     module: {
